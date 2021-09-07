@@ -6,6 +6,12 @@
     font-weight: bold;
 }
 
+#login-user{
+
+  background-color:slategray;
+
+}
+
 .jumbotron {
   height: 50vh;
   padding: 5em inherit;

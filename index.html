@@ -23,6 +23,7 @@
       align-items: center;
       padding-top: 40px;
       padding-bottom: 40px;
+      /* agregamos el color de fondo, la imagen, el atributo no repeat, y la posicionamos arriba*/
       background-color: rgba(248,249,251,255);
       background-image: url(./img/login.png);
       background-repeat: no-repeat;
@@ -91,22 +92,24 @@
 <body>
 
   <h1 id="title">Bienvenidos!</h1>
-      <div class="justify-content-center" id="div-login">
+
   
-    
-  </div>
+      
    
 
-   <div id="div-login" class="row justify-content-center" >
+   <div id="div-login">
   <form action="./home.html">
 
     <label for="txtName">Ingrese su nombre:</label>
     <input type="text" name="txtName" id="txtName" placeholder="Nombre" required>
+
+
 <br>  
 <br>
     <label for="password">Ingrese su contraseña:</label>
     <input type="password" name="password" id="password" placeholder="contraseña" required>
 
+    
     <br>
     <input type="submit" value="Aceptar" id="button">
 
@@ -115,6 +118,8 @@
 
 
   </form>
+
+  
 
 </div>
   
