@@ -176,12 +176,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
       let soldCount = productos[i].soldCount;
       document.getElementById("carsTable").innerHTML += `
   <tr>
-        <td> <img src= ${imgSrc} width="250" height="200" </td>
+        
+        <td> <a id="etiqA" href="./product-info.html">  <img src= ${imgSrc} width="250" height="200" </a> </td> 
         <td> ${name} ${description}</td>
         <td>${currency}${cost}</td>
-        <td>${soldCount}</td>
+        <td> ${soldCount} </td>
+        
   </tr>    
-  `;
+  `
       i++;
     }
   }

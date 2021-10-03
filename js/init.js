@@ -51,8 +51,17 @@ document.addEventListener("DOMContentLoaded", function(e){
   agregarNav = `
   
   <a class="py-2 d-none d-md-inline-block" href="#"> Usuario : ${usuario} </a>
-   `
-  document.getElementById("login-user").innerHTML = agregarNav;
-  
-});
 
+   `
+   document.getElementById("dropdownMenuLink").innerHTML = agregarNav;
+   
+   //evento para borrar el usuario guardado
+   document.getElementById("btnCerrarSecion").addEventListener("click", function () {
+ 
+    sessionStorage.clear() 
+  
+  });
+
+  });
+
+  

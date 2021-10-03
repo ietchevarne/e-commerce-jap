@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,18 +14,19 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <style>
-   html, body{
+    html,
+    body {
       height: 100%;
     }
 
- 
+
     body {
       -ms-flex-align: center;
       align-items: center;
       padding-top: 40px;
       padding-bottom: 40px;
       /* agregamos el color de fondo, la imagen, el atributo no repeat, y la posicionamos arriba*/
-      background-color: rgba(248,249,251,255);
+      background-color: rgba(248, 249, 251, 255);
       background-image: url(./img/login.png);
       background-repeat: no-repeat;
       background-position: top;
@@ -35,96 +37,86 @@
       width: 100%;
       max-width: 330px;
       padding: 15px;
-      margin: auto; 
-    } 
+      margin: auto;
+    }
 
     /* le damos posicion al div login osea el formulario */
-    #div-login{
-    position: absolute;
-    top: 420px;
-    right: 550px;
+    #div-login {
+      position: absolute;
+      top: 420px;
+      right: 550px;
 
     }
-    
+
     /* posicionamos el titulo por debajo de la imagen */
-    #title
-    {
+    #title {
 
       position: absolute;
       top: 350px;
       right: 600px;
-      color: rgba(31,158,189,255);
+      color: rgba(31, 158, 189, 255);
     }
 
     /* posiciono la caja de texto centrada con la caja del password ya que me quedaban desordenadas*/
-    #txtName{
+    #txtName {
 
       position: absolute;
       top: 3px;
       right: 0px;
       background-color: #f8f9fb;
-      color :#229fbd;
-      border:double;  
+      color: #229fbd;
+      border: double;
     }
+
     /* Estilos de la caja de texto password*/
-    #password{
+    #password {
       background-color: #f8f9fb;
-      color :#229fbd;
-      border:double;  
+      color: #229fbd;
+      border: double;
     }
 
     /* estilos de boton*/
-    #button{
+    #button {
       color: white;
-      background-color:rgba(31,158,189,255);
+      background-color: rgba(31, 158, 189, 255);
       border: none;
       position: absolute;
       right: 0px;
 
     }
-    label{
+
+    label {
 
       color: #229fbd;
       font-size: 25px;
     }
   </style>
 </head>
+
 <body>
 
   <h1 id="title">Bienvenidos!</h1>
 
-  
-      
-   
 
-   <div id="div-login">
-  <form action="./home.html">
+  <div id="div-login">
+    <form action="./home.html">
 
-    <label for="txtName">Ingrese su nombre:</label>
-    <input type="text" name="txtName" id="txtName" placeholder="Nombre" required>
+      <label for="txtName">Ingrese su nombre:</label>
+      <input type="text" name="txtName" id="txtName" placeholder="Nombre" required>
+      <br>
+      <br>
+      <label for="password">Ingrese su contraseña:</label>
+      <input type="password" name="password" id="password" placeholder="contraseña" required>
+      <br>
+      <input type="submit" value="Aceptar" id="button">
 
+    </form>
 
-<br>  
-<br>
-    <label for="password">Ingrese su contraseña:</label>
-    <input type="password" name="password" id="password" placeholder="contraseña" required>
+  </div>
 
-    
-    <br>
-    <input type="submit" value="Aceptar" id="button">
-
-
-
-
-
-  </form>
-
-  
-
-</div>
-  
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
 
 </body>
+
 </html>

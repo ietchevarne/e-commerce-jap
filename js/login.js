@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         sessionStorage.setItem("user", user);
 
         console.log(user);
+        
     }
 
 
